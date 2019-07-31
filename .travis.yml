@@ -20,6 +20,7 @@ after_success:
   - docker push bharath6692/multi-nginx
   - docker push bharath6692/multi-server
   - docker push bharath6692/multi-worker
+  
 
   deploy:
     provider: elasticbeanstalk
