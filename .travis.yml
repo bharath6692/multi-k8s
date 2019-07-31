@@ -21,8 +21,7 @@ after_success:
   - docker push bharath6692/multi-server
   - docker push bharath6692/multi-worker
   
-
-  deploy:
+deploy:
     provider: elasticbeanstalk
     region: us-east-2
     app: multi-docker
