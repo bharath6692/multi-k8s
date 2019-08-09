@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata: 
+metadata:
   name: worker-deployment
 spec:
   replicas: 1
@@ -20,5 +20,3 @@ spec:
               value: redis-cluster-ip-service
             - name: REDIS_PORT
               value: '6379'
-
-    

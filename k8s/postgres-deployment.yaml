@@ -20,7 +20,7 @@ spec:
         - name: postgres
           image : postgres
           ports :
-            - containerPort : 5432 
+            - containerPort : 5432
           volumeMounts:
             - name: postgres-storage
               mountPath: /var/lib/postgresql/data
@@ -31,4 +31,3 @@ spec:
                 secretKeyRef: #refencing the secret created from command line
                   name: pgpassword
                   key: PGPASSWORD
-    
